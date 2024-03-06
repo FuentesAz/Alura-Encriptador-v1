@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="width" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Alura - Challenge Encriptador</title>
+</head>
+<body>
+    <!--Logo-->
+    <header>
+        <img class="logo" src="/img/logo-alura.png" height="100px" alt="">
+    </header>
+
+    <main>
+        <section class="contenedor">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí..."></textarea>
+            
+            <div class="info">
+                <img src="img/i (1).png" alt="">
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+                <button onclick="btnEncriptar()" class="btn-encriptar">Encriptar</button>
+                <button onclick="btnDesencriptar()" class="btn-desencriptar">Desencriptar</button> 
+            </div>
+        </section>
+
+        <section class="mensaje-seccion">
+            <textarea id="text-area-incriptado" cols="30" rows="10"></textarea>
+            <img id="img-encriptar" src="img/fallout.png" height="300px">
+            <h4 id="mensaje-titulo">Ningún mensaje fue <br>encontrado</h4>
+            <p id="mensaje-texto">Ingrese el texto que desees encriptador o<br>desencriptar</p>
+            <button onclick="copiarTexto()" class="btn-copiar">Copiar</button>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
